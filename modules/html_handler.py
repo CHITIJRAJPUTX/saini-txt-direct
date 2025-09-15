@@ -40,7 +40,7 @@ def categorize_urls(urls):
         elif "youtube.com/embed" in url:
             yt_id = url.split("/")[-1]
             new_url = f"https://www.youtube.com/watch?v={yt_id}"
-            
+
         elif ".m3u8" in url:
             videos.append((name, url))
         elif ".mp4" in url:
